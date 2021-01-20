@@ -1,0 +1,56 @@
+PODS:
+  - SnapKit (5.0.1)
+  - VandMarvelAPI (0.1.0):
+    - VandMarvelAPI/Classes (= 0.1.0)
+  - VandMarvelAPI/Classes (0.1.0)
+  - VandMarvelCharacters (0.1.0):
+    - SnapKit (~> 5.0.0)
+    - VandMarvelCharacters/Classes (= 0.1.0)
+    - VandMarvelUIKit
+  - VandMarvelCharacters/Classes (0.1.0):
+    - SnapKit (~> 5.0.0)
+    - VandMarvelUIKit
+  - VandMarvelUIKit (0.1.0):
+    - VandMarvelUIKit/Classes (= 0.1.0)
+  - VandMarvelUIKit/Classes (0.1.0)
+
+DEPENDENCIES:
+  - "VandMarvelAPI (from `git@github.com:Vandcarlos/VandMarvelAPI.git`, branch `main`)"
+  - "VandMarvelCharacters (from `git@github.com:Vandcarlos/VandMarvelCharacters.git`, branch `main`)"
+  - "VandMarvelUIKit (from `git@github.com:Vandcarlos/VandMarvelUIKit.git`, branch `main`)"
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  VandMarvelAPI:
+    :branch: main
+    :git: "git@github.com:Vandcarlos/VandMarvelAPI.git"
+  VandMarvelCharacters:
+    :branch: main
+    :git: "git@github.com:Vandcarlos/VandMarvelCharacters.git"
+  VandMarvelUIKit:
+    :branch: main
+    :git: "git@github.com:Vandcarlos/VandMarvelUIKit.git"
+
+CHECKOUT OPTIONS:
+  VandMarvelAPI:
+    :commit: c98f63a44b37ced2e22154fbfbdb268512983a59
+    :git: "git@github.com:Vandcarlos/VandMarvelAPI.git"
+  VandMarvelCharacters:
+    :commit: 355707c6a1eb4ee996fc0ab0d410b8e971dd5aa4
+    :git: "git@github.com:Vandcarlos/VandMarvelCharacters.git"
+  VandMarvelUIKit:
+    :commit: bd0baab4ac827d91d8a225c7c927adc31ba582ac
+    :git: "git@github.com:Vandcarlos/VandMarvelUIKit.git"
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  VandMarvelAPI: d87a532df5eb3b2ef819fdcc67836bc3c8a9c3bd
+  VandMarvelCharacters: fb4d98eb59a46565f4df6df607ad51c1176ee495
+  VandMarvelUIKit: 46c856707c38994a3788dead416ac3e002562deb
+
+PODFILE CHECKSUM: cb14321a22765f9a9af63e967716a9ce37a2646a
+
+COCOAPODS: 1.10.1
