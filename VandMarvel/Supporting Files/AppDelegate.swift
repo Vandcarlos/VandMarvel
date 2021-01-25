@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private static let rootViewController = UINavigationController(rootViewController: MainViewController())
+    private static let rootViewController = MainViewController()
 
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+
+        VandMarvelConfig.run()
 
         setupWindow()
 
@@ -30,4 +32,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-

@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		51BEB12F4D3379252C4F8DBD /* Pods_VandMarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEABF577AE842CF9BDB1255 /* Pods_VandMarvelTests.framework */; };
 		7A403B0E4146792D2D548F88 /* Pods_VandMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102F63FDADFF4213AF0E213D /* Pods_VandMarvel.framework */; };
+		A07F5DED25BF605400B1B487 /* VandMarvelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F5DEC25BF605400B1B487 /* VandMarvelConfig.swift */; };
+		A07F5DF225BF60A900B1B487 /* VandMarvelConfig+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F5DF125BF60A900B1B487 /* VandMarvelConfig+API.swift */; };
+		A07F5E0325BF624200B1B487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A07F5E0525BF624200B1B487 /* Localizable.strings */; };
+		A07F5E0A25BF625900B1B487 /* VandMarvelConfig+Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F5E0925BF625900B1B487 /* VandMarvelConfig+Characters.swift */; };
 		A0BDAB4425B7D00A00A711AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAB4325B7D00A00A711AB /* AppDelegate.swift */; };
 		A0BDAB4825B7D00A00A711AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAB4725B7D00A00A711AB /* MainViewController.swift */; };
 		A0BDAB4D25B7D00D00A711AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAB4C25B7D00D00A711AB /* Assets.xcassets */; };
 		A0BDAB5025B7D00D00A711AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAB4E25B7D00D00A711AB /* LaunchScreen.storyboard */; };
 		A0BDAB5B25B7D00D00A711AB /* VandMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAB5A25B7D00D00A711AB /* VandMarvelTests.swift */; };
 		A0BDAB6625B7D00D00A711AB /* VandMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAB6525B7D00D00A711AB /* VandMarvelUITests.swift */; };
-		A0BDAB8F25B7D0AB00A711AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAB8E25B7D0AB00A711AB /* MainView.swift */; };
 		B472C1D970D26022083C0FEC /* Pods_VandMarvel_VandMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74556565E56593D4854CB15F /* Pods_VandMarvel_VandMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,12 @@
 		51811E45D2B8A86F14A878EB /* Pods-VandMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VandMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-VandMarvelTests/Pods-VandMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		725052A310633EA844598A70 /* Pods-VandMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VandMarvel.release.xcconfig"; path = "Target Support Files/Pods-VandMarvel/Pods-VandMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		74556565E56593D4854CB15F /* Pods_VandMarvel_VandMarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VandMarvel_VandMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07F5DEC25BF605400B1B487 /* VandMarvelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VandMarvelConfig.swift; sourceTree = "<group>"; };
+		A07F5DF125BF60A900B1B487 /* VandMarvelConfig+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VandMarvelConfig+API.swift"; sourceTree = "<group>"; };
+		A07F5DFF25BF61F800B1B487 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A07F5E0425BF624200B1B487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A07F5E0925BF625900B1B487 /* VandMarvelConfig+Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VandMarvelConfig+Characters.swift"; sourceTree = "<group>"; };
+		A07F5E1125BF63E100B1B487 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A0BDAB4025B7D00A00A711AB /* VandMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VandMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BDAB4325B7D00A00A711AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0BDAB4725B7D00A00A711AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		A0BDAB6125B7D00D00A711AB /* VandMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VandMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BDAB6525B7D00D00A711AB /* VandMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VandMarvelUITests.swift; sourceTree = "<group>"; };
 		A0BDAB6725B7D00D00A711AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0BDAB8E25B7D0AB00A711AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A0C55D3F9FB1DC08DFDD2FD3 /* Pods-VandMarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VandMarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-VandMarvelTests/Pods-VandMarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEABF577AE842CF9BDB1255 /* Pods_VandMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VandMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A07F5DEB25BF603900B1B487 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A07F5DEC25BF605400B1B487 /* VandMarvelConfig.swift */,
+				A07F5DF125BF60A900B1B487 /* VandMarvelConfig+API.swift */,
+				A07F5E0925BF625900B1B487 /* VandMarvelConfig+Characters.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		A0BDAB3725B7D00A00A711AB = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +132,8 @@
 		A0BDAB4225B7D00A00A711AB /* VandMarvel */ = {
 			isa = PBXGroup;
 			children = (
-				A0BDAB7A25B7D03900A711AB /* Features */,
 				A0BDAB7625B7D02300A711AB /* Supporting Files */,
+				A0BDAB7A25B7D03900A711AB /* Features */,
 			);
 			path = VandMarvel;
 			sourceTree = "<group>";
@@ -142,7 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				A0BDAB4325B7D00A00A711AB /* AppDelegate.swift */,
+				A07F5DEB25BF603900B1B487 /* Config */,
 				A0BDAB4C25B7D00D00A711AB /* Assets.xcassets */,
+				A07F5E0525BF624200B1B487 /* Localizable.strings */,
 				A0BDAB4E25B7D00D00A711AB /* LaunchScreen.storyboard */,
 				A0BDAB5125B7D00D00A711AB /* Info.plist */,
 			);
@@ -161,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				A0BDAB4725B7D00A00A711AB /* MainViewController.swift */,
-				A0BDAB8E25B7D0AB00A711AB /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -281,6 +300,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = A0BDAB3725B7D00A00A711AB;
 			productRefGroup = A0BDAB4125B7D00A00A711AB /* Products */;
@@ -300,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BDAB5025B7D00D00A711AB /* LaunchScreen.storyboard in Resources */,
+				A07F5E0325BF624200B1B487 /* Localizable.strings in Resources */,
 				A0BDAB4D25B7D00D00A711AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,8 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07F5DF225BF60A900B1B487 /* VandMarvelConfig+API.swift in Sources */,
+				A07F5E0A25BF625900B1B487 /* VandMarvelConfig+Characters.swift in Sources */,
 				A0BDAB4825B7D00A00A711AB /* MainViewController.swift in Sources */,
-				A0BDAB8F25B7D0AB00A711AB /* MainView.swift in Sources */,
+				A07F5DED25BF605400B1B487 /* VandMarvelConfig.swift in Sources */,
 				A0BDAB4425B7D00A00A711AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,10 +507,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A07F5E0525BF624200B1B487 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A07F5E0425BF624200B1B487 /* en */,
+				A07F5E1125BF63E100B1B487 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A0BDAB4E25B7D00D00A711AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0BDAB4F25B7D00D00A711AB /* Base */,
+				A07F5DFF25BF61F800B1B487 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -499,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -560,6 +594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

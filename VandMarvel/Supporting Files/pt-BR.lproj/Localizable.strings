@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  VandMarvel
+
+  Created by Vandcarlos Mouzinho Sandes Junior on 25/01/21.
+  Copyright © 2021 Vand. All rights reserved.
+*/
+
+"alert_title" = "Ops";
+"alert_message" = "Tente mais tarde";
+
+"confirm_action" = "Tente novamente";
+"cancel_action" = "Confirmar";
+"try_again_action" = "Cancelar";
+
+"without_internet_connection" = "Sem internet";
+
+"list_characters_empty_state" = "Sem personagens";
+"list_characters_title" = "Personagens";
+
+"favorite_characters_empty_state" = "Sem personagens favoritos";
+"favorite_characters_title" = "Favoritos";
+
+"character_details_title" = "Detalhes";
