@@ -1,11 +1,14 @@
+source 'https://github.com/Vandcarlos/VandMarvelSpecs.git'
+source 'https://cdn.cocoapods.org/'
+
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
 def internal_pods
 
-  pod 'VandMarvelUIKit', :git => 'git@github.com:Vandcarlos/VandMarvelUIKit.git', :branch => 'main'
-  pod 'VandMarvelAPI', :git => 'git@github.com:Vandcarlos/VandMarvelAPI.git', :branch => 'main'
-  pod 'VandMarvelCharacters', :git => 'git@github.com:Vandcarlos/VandMarvelCharacters.git', :branch => 'main'
+  pod 'VandMarvelUIKit'
+  pod 'VandMarvelAPI'
+  pod 'VandMarvelCharacters'
 
 end
 
