@@ -9,9 +9,9 @@
 "alert_title" = "Ops";
 "alert_message" = "Tente mais tarde";
 
-"confirm_action" = "Tente novamente";
-"cancel_action" = "Confirmar";
-"try_again_action" = "Cancelar";
+"confirm_action" = "Confirmar";
+"cancel_action" = "Cancelar";
+"try_again_action" = "Tentar novamente";
 
 "without_internet_connection" = "Sem internet";
 
