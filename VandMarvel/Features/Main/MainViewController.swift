@@ -8,31 +8,12 @@
 import VandMarvelCharacters
 import VandMarvelUIKit
 
-class MainViewController: VMBaseNavigationController {
+class MainViewController: VMBaseTabBarController {
 
-    convenience init() {
-        self.init(nibName: nil, bundle: nil)
-    }
-
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        appTabBarController = VMBaseTabBarController()
-
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-
-        setup()
-
-        viewControllers = [appTabBarController]
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    private let appTabBarController: VMBaseTabBarController
-
-    private lazy var listCharacters: VMListCharactersViewController = {
+    private lazy var listCharacters: UINavigationController = {
         let viewController = VMListCharactersViewController()
-        let router = VMListCharactersRouter(navigationController: self)
+        let navigationController = VMBaseNavigationController(rootViewController: viewController)
+        let router = VMListCharactersRouter(navigationController: navigationController)
         let interactor = VMListCharactersInteractor()
 
         let presenter = VMListCharactersPresenter(
@@ -43,12 +24,18 @@ class MainViewController: VMBaseNavigationController {
 
         viewController.presenter = presenter
         interactor.presenter = presenter
-        return viewController
+
+        navigationController.tabBarItem.title =
+            VandMarvelCharacters.shared.charactersMessages.listCharactersTitle
+        navigationController.tabBarItem.image = VMImage.list.image
+
+        return navigationController
     }()
 
-    private lazy var favoriteCharacters: VMFavoriteCharactersViewController = {
+    private lazy var favoriteCharacters: UINavigationController = {
         let viewController = VMFavoriteCharactersViewController()
-        let router = VMFavoriteCharactersRouter(navigationController: self)
+        let navigationController = VMBaseNavigationController(rootViewController: viewController)
+        let router = VMFavoriteCharactersRouter(navigationController: navigationController)
 
         let interactor = VMFavoriteCharactersInteractor()
         let presenter = VMFavoriteCharactersPresenter(
@@ -60,39 +47,17 @@ class MainViewController: VMBaseNavigationController {
         viewController.presenter = presenter
         interactor.presenter = presenter
 
-        return viewController
+        navigationController.tabBarItem.title =
+            VandMarvelCharacters.shared.charactersMessages.favoriteCharactersTitle
+        navigationController.tabBarItem.image = VMImage.heart.image
+
+        return navigationController
     }()
 
-    private func setup() {
-        appTabBarController.viewControllers = [listCharacters, favoriteCharacters]
-        appTabBarController.title = VandMarvelCharacters.shared.charactersMessages.listCharactersTitle
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        appTabBarController.tabBar.items?[0].title =
-            VandMarvelCharacters.shared.charactersMessages.listCharactersTitle
-        appTabBarController.tabBar.items?[0].image = VMImage.list.image
-
-        appTabBarController.tabBar.items?[1].title =
-            VandMarvelCharacters.shared.charactersMessages.favoriteCharactersTitle
-        appTabBarController.tabBar.items?[1].image = VMImage.heart.image
-
-        appTabBarController.delegate = self
-    }
-
-}
-
-extension MainViewController: UITabBarControllerDelegate {
-
-    func tabBarController(
-        _ tabBarController: UITabBarController,
-        didSelect viewController: UIViewController
-    ) {
-        switch viewController {
-        case is VMListCharactersViewController:
-            tabBarController.title = VandMarvelCharacters.shared.charactersMessages.listCharactersTitle
-        case is VMFavoriteCharactersViewController:
-            tabBarController.title = VandMarvelCharacters.shared.charactersMessages.favoriteCharactersTitle
-        default: break
-        }
+        viewControllers = [listCharacters, favoriteCharacters]
     }
 
 }
